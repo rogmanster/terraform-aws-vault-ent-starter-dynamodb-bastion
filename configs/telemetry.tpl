@@ -117,7 +117,7 @@ docker run \
 
 #SSH
 cat << EOF | sudo tee -a /home/ubuntu/.ssh/id_rsa
-$private_key_name
+${private_key_name}
 EOF
 sudo chown ubuntu:ubuntu /home/ubuntu/.ssh/id_rsa
 sudo chmod 0600 /home/ubuntu/.ssh/id_rsa
